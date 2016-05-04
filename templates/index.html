@@ -7,26 +7,32 @@
 	<link href='../css/style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container">
-	<div class="row"><h1>Rob's Blog</h1></div>
-	<div class="row"></div><div class="col-md-6">
 	
-	<form method="post">
-		<label>Title</label><br>
-		<input name='title' type='string' value='{{title}}'><br><br>
-
-		<label>Art</label><br>
-		<textarea name="art" rows='5' cols='30'>{{art}}</textarea><br><br>
-
-		<div class="error">{{error}}<div>
-
-		<input type='submit' value='Submit'>
-
-	</form>
-
-	</div>
-	<div class="col-md-6">Other column...</div>
-	<hr>
 	<div class="container">
+		<div class="row">
+			<h1>Rob's Blog</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6 temp-border">
+				<form method="post">
+					<label>Title</label><br>
+					<input name='title' type='string' value='{{title}}'><br><br>
+
+					<label>Art</label><br>
+					<textarea name="art" rows='5' cols='30'>{{art}}</textarea><br><br>
+
+					<div class="error">{{error}}</div>
+
+					<input type='submit' value='Submit'>
+				</form>
+			</div>
+
+			<div class="col-md-6 temp-border">
+				Other column...
+			</div>
+
+		</div>
+	</div>
+
 </body>
 </html>
