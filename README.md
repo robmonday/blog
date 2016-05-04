@@ -11,7 +11,7 @@ This is a Udacity project that is part of the Full Stack Nanodegree.
 ##License
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2016 Rob Monday
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
