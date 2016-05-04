@@ -1,6 +1,6 @@
 #Multi-User Blog
 
-This is a Udacity project that is part of the Full Stack Nanodegree.  
+This is a Udacity project that is part of the Full Stack Nanodegree.  It makes use of the Bootstrap HTML framework and Google App Engine.
 
 ##Installation
 <ol>
