@@ -35,16 +35,22 @@ class Handler(webapp2.RequestHandler):
                 self.write(self.render_str(template, **kw))
 
 class MainPage(Handler):
+
+    def render_front(self, title="", art="", error=""):
+        self.render("index.html", title=title, art=art, error=error)
+
+
     def get(self):
-        self.render("index.html")
+        self.render_front()
+
 
     def post(self):
         title = self.request.get("title")
         art = self.request.get("art")
         if title and art:
-                self.write("Thanks!")
+            self.write("Thanks!")
         else:
-                error = "Please enter both a title and some artwork!"
-                self.render("index.html", title = title, art = art, error = error)
+            error = "Please enter both a title and some artwork!"
+            self.render_front(title, art, error)
 
 app = webapp2.WSGIApplication([('/', MainPage)], debug=True)
